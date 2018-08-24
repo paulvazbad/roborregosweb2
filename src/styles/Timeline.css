@@ -1,0 +1,10 @@
+.background{
+  background-color:#e3e3e3;
+  min-height: 100%;
+  display: flex;
+  flex-grow:1;
+}
+.image{
+  flex-grow: 1;
+  object-fit: cover;
+}
