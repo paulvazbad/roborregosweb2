@@ -6,7 +6,7 @@ export default class Header extends Component{
 	render(){
 		return(
 	<header role="banner" class="position-absolute">
-		<nav class="background-primary-dott full-width sticky">
+		<nav class=" full-width sticky">
 			<div class="top-nav">
 
 				<div class="logo hide-l hide-xl hide-xxl">
@@ -17,9 +17,9 @@ export default class Header extends Component{
 
 				<div class="top-nav left-menu">
 					 <ul class="right top-ul chevron">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about-us.html">About Us</a></li>
-							<li><a href="services.html">Our Services</a></li>
+							<li class="red"><a href="index.html">Home</a></li>
+							<li class= "green"><a href="about-us.html">About Us</a></li>
+							<li class="yellow"><a href="services.html">History</a></li>
 					 </ul>
 				</div>
 
@@ -34,17 +34,11 @@ export default class Header extends Component{
 				</ul>
 
 
-				<div class="top-nav right-menu">
-					 <ul class="top-ul chevron">
-							<li>
-								<a>Products</a>
-								<ul>
-									<li><a>Product 1</a></li>
-									<li><a>Product 2</a></li>
-								</ul>
-							</li>
-							<li><a href="gallery.html">Gallery</a></li>
-							<li><a href="contact.html">Contact</a></li>
+				<div class="top-nav right-menu  background-red-dott">
+					 <ul class="top-ul chevron " >
+
+							<li class="blue"><a href="gallery.html">Members</a></li>
+							<li class="purple"><a href="contact.html">Contact</a></li>
 					 </ul>
 				</div>
 			</div>
