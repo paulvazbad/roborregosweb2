@@ -13,7 +13,15 @@ class BackgroundSolid extends Component {
         <div class="background-solid">
 
           <div class="content-center">
-            <img src={RoboLogo} class="image" align="right" />
+            <div className="left-div">
+              <div className="center-left-div">
+                {this.props.children}
+              </div>
+            </div>
+
+            <div className="div-img">
+              <img src={RoboLogo} class="image-background" align="right" />
+            </div>
           </div>
           
           <div class="footer" 
@@ -49,7 +57,14 @@ class IndexCover extends Component {
 
   render() {
     return (
-      <BackgroundSolid />
+      <BackgroundSolid>
+        <div className="index-cover-content">
+          <DisappearingLogo />
+          <h1>RoBorregos: Official Representative Robotics Team</h1>
+          <h3>Tec de Monterrey</h3>
+          <h4>Monterrey, N.L., Mexico</h4>
+        </div>
+      </BackgroundSolid>
     );
   }
 }

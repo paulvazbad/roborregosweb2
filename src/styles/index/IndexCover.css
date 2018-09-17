@@ -1,3 +1,11 @@
+.index-cover-content h1,h2,h3,h4 {
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.index-cover-content h1 {
+  font-size: 4rem;
+}
+
 .background-solid {
   width: 100%;
   overflow: hidden;
@@ -5,18 +13,36 @@
 }
 
 .background-solid .content-center {
+  position: relative;
   height: 105vh;
   min-height: 500px;
   max-height: 1500px;
   overflow: hidden;
   width: 125%;
   max-width: 1500px;
-  padding-top: 60vh;
   margin-left: auto;
   margin-right: auto;
 }
 
-.background-solid .content-center img {
+.background-solid .content-center .left-div {
+  position: absolute;
+  display: flex; /** inline-block */
+  width: 65%;
+  min-width: 400px;
+  height: 100%;
+  padding-left: 5%;
+}
+
+.background-solid .content-center .left-div .center-left-div{
+  align-self: center;
+}
+
+.background-solid .content-center .div-img {
+  position: relative;
+  padding-top: 60vh;
+}
+
+.background-solid .content-center .div-img img.image-background {
   width: 40%;
   height: auto;
 }
