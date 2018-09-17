@@ -10,9 +10,9 @@ class BackgroundSolid extends Component {
 
     render() {
       return (
-        <div class="background-solid">
+        <div className="background-solid">
 
-          <div class="content-center">
+          <div className="content-center">
             <div className="left-div">
               <div className="center-left-div">
                 {this.props.children}
@@ -20,11 +20,11 @@ class BackgroundSolid extends Component {
             </div>
 
             <div className="div-img">
-              <img src={RoboLogo} class="image-background" align="right" />
+              <img src={RoboLogo} className="image-background" align="right" />
             </div>
           </div>
           
-          <div class="footer" 
+          <div className="footer" 
             style={{"background-image": "url(" + RoboLogo + ")"}}>
           </div>
 
