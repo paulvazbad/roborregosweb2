@@ -1,5 +1,5 @@
 import React, { Component } from'react';
-import '../../styles/index/MainEntry.css';
+import '../../styles/index/IndexCover.css';
 import RoboLogo from '../../images/RoboLogo.png'
 
 class BackgroundSolid extends Component {
