@@ -25,6 +25,22 @@ class BackgroundSolid extends Component {
     }
 }
 
+class DisappearingLogo extends Component {
+  constructor(props) {
+    /** {visible : boolean} */
+    super(props);
+  }
+
+  render() {
+    return (
+      <div className="disappearing-logo">
+        <div className="size-holder-div"></div>
+        <img src={RoboLogo} className="disappearing-img"/>
+      </div>
+    );
+  }
+}
+
 class IndexCover extends Component {
   constructor(props) {
     /** {} */

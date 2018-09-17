@@ -27,3 +27,21 @@
   max-height: 150px;
   background-size: 10px auto;
 }
+
+
+.disappearing-logo {
+  height: 220px;
+  width: auto;
+  position: relative;
+}
+
+.disappearing-logo .size-holder-div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.disappearing-logo img.disappearing-img {
+  height: 100%;
+  width: auto;
+}
