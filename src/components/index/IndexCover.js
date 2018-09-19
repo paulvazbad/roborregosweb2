@@ -43,7 +43,9 @@ class DisappearingLogo extends Component {
     return (
       <div className="disappearing-logo">
         <div className="size-holder-div"></div>
-        <img src={RoboLogo} className="disappearing-img"/>
+        <img 
+          src={RoboLogo} 
+          className={"disappearing-img " + (this.props.visible ? "img-visible" : "img-invisible")}/>
       </div>
     );
   }
@@ -51,7 +53,7 @@ class DisappearingLogo extends Component {
 
 class IndexCover extends Component {
   constructor(props) {
-    /** {} */
+    /** {logoVisible: boolean} */
     super(props);
   }
 
@@ -59,7 +61,7 @@ class IndexCover extends Component {
     return (
       <BackgroundSolid>
         <div className="index-cover-content">
-          <DisappearingLogo />
+          <DisappearingLogo visible={this.props.logoVisible} />
           <h1>RoBorregos: Official Representative Robotics Team</h1>
           <h3>Tec de Monterrey</h3>
           <h4>Monterrey, N.L., Mexico</h4>
