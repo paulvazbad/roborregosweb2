@@ -25,7 +25,7 @@ class BackgroundSolid extends Component {
           </div>
           
           <div className="footer" 
-            style={{"background-image": "url(" + RoboLogo + ")"}}>
+            style={{backgroundImage: "url(" + RoboLogo + ")"}}>
           </div>
 
         </div>

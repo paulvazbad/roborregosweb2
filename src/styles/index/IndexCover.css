@@ -45,6 +45,9 @@
 .background-solid .content-center .div-img img.image-background {
   width: 40%;
   height: auto;
+  z-index: -1000;
+  position: relative;
+  opacity: 0.70;
 }
 
 .background-solid .footer {
