@@ -27,11 +27,11 @@ export default class Timeline extends React.Component{
 		return this.state.eventos.map( evento =>
 			 <VerticalTimelineElement
 				 className="vertical-timeline-element--work"
-				 date={evento.date}
 				 iconStyle={{ background: evento.color, color: '#fff' }}
 				 icon={<Build />}
 			 >
-				 <h3 className="vertical-timeline-element-title">{evento.title}</h3>
+				 <h3 className="vertical-timeline-element-title"><b>{evento.title}</b></h3>
+				 <h4 className="vertical-timeline-element-subtitle">{evento.date}</h4>
 				 <p>
 					{evento.description}
 				 </p>

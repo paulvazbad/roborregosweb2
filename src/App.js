@@ -9,15 +9,15 @@ import * as paths from './constants/paths.js';
 class App extends Component {
   render() {
     return (
+      <HashRouter>
       <div>
       <Header />
-      <HashRouter>
       <Route
         exact path={paths.HISTORY}
         component={() => <Timeline />}
       />
-      </HashRouter>
       </div>
+      </HashRouter>
     );
   }
 }
