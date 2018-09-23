@@ -20,6 +20,14 @@ export default class Timeline extends React.Component{
 			members: ['Osvaldo Alvarez', 'Alexis Virgen', 'Ivan Sol', 'Antonio Rodriguez', 'Mariano Uvalle'],
 			date: 'November 2018',
 			color: 'rgb(34, 100, 203)'
+		},
+		{
+			title: 'LARC 2018',
+			description: 'Participacion en la Latin American Robotics Competition 2018 en Brazil',
+			image: 'https://via.placeholder.com/150x150',
+			members: ['Osvaldo Alvarez', 'Alexis Virgen', 'Ivan Sol', 'Antonio Rodriguez', 'Mariano Uvalle'],
+			date: 'November 2018',
+			color: 'rgb(34, 100, 203)'
 		}
 	]}
 
