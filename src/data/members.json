@@ -1,0 +1,44 @@
+{
+	"members": [
+		{
+			"id": 1,
+			"img": "paul_avatar.jpg",
+			"name": "Paul",
+			"lastname": "Vázquez",
+			"role": "Programmer",
+			"github": "https://github.com/paulvazbad"
+		},
+		{
+			"id": 2,
+			"img": "diego_avatar.jpg",
+			"name": "Diego",
+			"lastname": "Cardozo",
+			"role": "Programmer",
+			"github": "https://github.com/diegocardozo97"
+		},
+		{
+			"id": 3,
+			"img": "gallo_avatar.jpg",
+			"name": "Eduardo",
+			"lastname": "Sánchez",
+			"role": "Programmer",
+			"github": "https://github.com/gallosanchez23"
+		},
+		{
+			"id": 4,
+			"img": "alejandro_avatar.jpg",
+			"name": "Alejandro",
+			"lastname": "Garza",
+			"role": "Programmer",
+			"github": "https://github.com/alexhor22"
+		},
+		{
+			"id": 5,
+			"img": "antonio_avatar.jpg",
+			"name": "Antonio",
+			"lastname": "Rodríguez",
+			"role": "Programmer",
+			"github": "https://github.com/AntonioRdzNav"
+		}
+	]
+}

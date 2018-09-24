@@ -19,15 +19,15 @@ export default class Header extends Component{
 
 				<div class="top-nav left-menu">
 					 <ul class="right top-ul chevron">
-							<li class="red"><a href="index.html">Home</a></li>
-							<li class= "green"><a href="about-us.html">About Us</a></li>
+							<li class="red"><Link to={paths.HOME}>Home</Link></li>
+							<li class= "green"><Link to={paths.ABOUTUS}>About Us</Link></li>
 							<li class="yellow"><Link to={paths.HISTORY}>History</Link></li>
 					 </ul>
 				</div>
 
 
 				<ul class="logo-menu">
-					<a href="index.html" class="logo">
+					<a href="/" class="logo">
 
 						<img class="logo-white" src={MainLogo} alt=""/>
 
@@ -39,8 +39,8 @@ export default class Header extends Component{
 				<div class="top-nav right-menu  background-red-dott">
 					 <ul class="top-ul chevron " >
 
-							<li class="blue"><a href="gallery.html">Members</a></li>
-							<li class="purple"><a href="contact.html">Contact</a></li>
+							<li class="blue"><Link to={paths.MEMBERS}>Members</Link></li>
+							<li class="purple"><Link to={paths.CONTACT}>Contact</Link></li>
 					 </ul>
 				</div>
 			</div>
