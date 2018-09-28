@@ -96,7 +96,10 @@ class MembersGrid extends React.Component {
 				</GridList>
 
 				{this.state.openMember &&
-					<MemberInformationModal member={this.state.memberData} />
+					<MemberInformationModal
+						member={this.state.memberData}
+						onClick={() => this.handleCloseMember()}
+					/>
 				}
 
 			</div>

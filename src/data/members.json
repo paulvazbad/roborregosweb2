@@ -39,6 +39,86 @@
 			"lastname": "Rodríguez",
 			"role": "Programmer",
 			"github": "https://github.com/AntonioRdzNav"
+		},
+		{
+			"id": 6,
+			"img": "antonio_avatar.jpg",
+			"name": "Alexis",
+			"lastname": "Virgen",
+			"role": "Mechanic",
+			"github": "https://github.com/AntonioRdzNav"
+		},
+		{
+			"id": 7,
+			"img": "antonio_avatar.jpg",
+			"name": "Antonio",
+			"lastname": "Rodríguez",
+			"role": "Programmer",
+			"github": "https://github.com/AntonioRdzNav"
+		},
+		{
+			"id": 8,
+			"img": "antonio_avatar.jpg",
+			"name": "Antonio",
+			"lastname": "Rodríguez",
+			"role": "Programmer",
+			"github": "https://github.com/AntonioRdzNav"
+		},
+		{
+			"id": 9,
+			"img": "antonio_avatar.jpg",
+			"name": "Antonio",
+			"lastname": "Rodríguez",
+			"role": "Programmer",
+			"github": "https://github.com/AntonioRdzNav"
+		},
+		{
+			"id": 10,
+			"img": "antonio_avatar.jpg",
+			"name": "Antonio",
+			"lastname": "Rodríguez",
+			"role": "Programmer",
+			"github": "https://github.com/AntonioRdzNav"
+		},
+		{
+			"id": 11,
+			"img": "antonio_avatar.jpg",
+			"name": "Antonio",
+			"lastname": "Rodríguez",
+			"role": "Programmer",
+			"github": "https://github.com/AntonioRdzNav"
+		},
+		{
+			"id": 12,
+			"img": "antonio_avatar.jpg",
+			"name": "Antonio",
+			"lastname": "Rodríguez",
+			"role": "Programmer",
+			"github": "https://github.com/AntonioRdzNav"
+		},
+		{
+			"id": 13,
+			"img": "antonio_avatar.jpg",
+			"name": "Antonio",
+			"lastname": "Rodríguez",
+			"role": "Programmer",
+			"github": "https://github.com/AntonioRdzNav"
+		},
+		{
+			"id": 14,
+			"img": "antonio_avatar.jpg",
+			"name": "Antonio",
+			"lastname": "Rodríguez",
+			"role": "Programmer",
+			"github": "https://github.com/AntonioRdzNav"
+		},
+		{
+			"id": 15,
+			"img": "antonio_avatar.jpg",
+			"name": "Antonio",
+			"lastname": "Rodríguez",
+			"role": "Programmer",
+			"github": "https://github.com/AntonioRdzNav"
 		}
 	]
 }

@@ -8,3 +8,7 @@
 .members-grid .member-cell:hover img {
 	transform: scale(1.2);
 }
+
+.members-grid .member-cell:hover {
+	cursor: pointer;
+}

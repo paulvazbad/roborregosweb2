@@ -1,6 +1,6 @@
 import React from 'react';
 import MembersGrid from './MembersGrid/membersGrid';
-import { withStyles } from '@material-ui/core/styles';
+import './members.css';
 
 class Members extends React.Component {
 	constructor(props) {
@@ -11,7 +11,9 @@ class Members extends React.Component {
 
 	render() {
 		return (
-			<MembersGrid membersData={this.membersData} />
+			<div>
+				<MembersGrid membersData={this.membersData} className={'members-grid-section'} />
+			</div>
 		);
 	}
 }
