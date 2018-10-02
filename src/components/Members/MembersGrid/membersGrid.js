@@ -17,6 +17,9 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import CloseIcon from '@material-ui/icons/Close';
 
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+//var ReactCSSTransitionGroup = require('react-addons-css-transition-group');
+
 
 const styles = theme => ({
 	root: {
@@ -70,6 +73,7 @@ class MembersGrid extends React.Component {
 		});
 	}
 
+
 	render() {
 		const classes = this.props;
 
@@ -95,18 +99,34 @@ class MembersGrid extends React.Component {
 					))}
 				</GridList>
 
-				{this.state.openMember &&
-					<MemberInformationModal
-						member={this.state.memberData}
-						onClick={() => this.handleCloseMember()}
-					/>
-				}
+				<ReactCSSTransitionGroup
+          transitionName="example"
+          transitionEnterTimeout={500}
+          transitionLeaveTimeout={300}>
+
+					{this.state.openMember &&
+						<MemberInformationModal
+							member={this.state.memberData}
+							onClick={() => this.handleCloseMember()}
+							className={'testMemberModal'}
+							TransitionComponent={Transition}
+						/>
+					}
+
+        </ReactCSSTransitionGroup>
 
 			</div>
 		);
 	}
 }
-
+/*
+					<MemberInformationModal
+						member={this.state.memberData}
+						onClick={() => this.handleCloseMember()}
+						className={'testMemberModal'}
+						key={'member'}
+					/>
+*/
 MembersGrid.propTypes = {
   classes: PropTypes.object.isRequired,
 };

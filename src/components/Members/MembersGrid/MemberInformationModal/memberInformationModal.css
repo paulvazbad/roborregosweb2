@@ -1,13 +1,13 @@
 .memberInformationModal {
 	display: block;
-	position: fixed;
-	z-index: 1;
-	left: 0;
+	position: absolute;
 	top: 0;
-	height: 100%;
-	width: 100%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
 	overflow: auto;
-	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,0.4);
 }
 
@@ -16,8 +16,7 @@
 }
 
 .memberInformationModal .memberAvatarContainer img {
-	padding: 0 10%;
-	vertical-align: 100px;
+	padding: 10%;
 }
 
 .memberInformationModal .memberInformationContainer{

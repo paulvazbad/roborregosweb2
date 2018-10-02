@@ -7,6 +7,13 @@ import Header from './components/Header';
 import Members from './components/Members/members';
 import './App.css';
 
+/*
+import react
+import external_deppendencies
+import internal_js
+import internal_styles
+*/
+
 
 class App extends Component {
   render() {
