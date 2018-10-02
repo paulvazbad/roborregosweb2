@@ -14,7 +14,6 @@ import internal_js
 import internal_styles
 */
 
-
 class App extends Component {
   render() {
     return (
