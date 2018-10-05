@@ -10,13 +10,15 @@ class App extends Component {
   render() {
     return (
       <HashRouter>
-      <div>
-      <Header />
-      <Route
-        exact path={paths.HISTORY}
-        component={() => <Timeline />}
-      />
-      </div>
+        <div>
+          <Header />
+
+          <Route
+            exact path={ paths.HISTORY }
+            component={ () => <Timeline />}
+          />
+
+        </div>
       </HashRouter>
     );
   }
