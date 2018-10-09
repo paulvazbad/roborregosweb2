@@ -2,7 +2,7 @@ import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { AccessAlarm, ThreeDRotation, Build } from '@material-ui/icons';
-import '../styles/Timeline.css';
+import './styles.css';
 export default class Timeline extends React.Component{
 	state = { eventos:[
 		{
@@ -31,32 +31,35 @@ export default class Timeline extends React.Component{
 		}
 	]}
 
-	 returnTimeLineEle = () => {
+	returnTimeLineEle = () => {
 		return this.state.eventos.map( evento =>
-			 <VerticalTimelineElement
-				 className="vertical-timeline-element--work"
-				 iconStyle={{ background: evento.color, color: '#fff' }}
-				 icon={<Build />}
-			 >
-				 <h3 className="vertical-timeline-element-title"><b>{evento.title}</b></h3>
-				 <h4 className="vertical-timeline-element-subtitle">{evento.date}</h4>
-				 <p>
-					{evento.description}
-				 </p>
-			 </VerticalTimelineElement>);
-
-		}
+	<VerticalTimelineElement
+		className="vertical-timeline-element--work"
+		iconStyle={{ background: evento.color, color: '#fff' }}
+		icon={<Build />}
+	>
+		<h3 className="vertical-timeline-element-title">
+			<b>
+				{evento.title}
+			</b>
+		</h3>
+		<h4 className="vertical-timeline-element-subtitle">
+			{evento.date}
+		</h4>
+		<p>
+			{evento.description}
+		</p>
+	</VerticalTimelineElement>
+		);
+	}
 
 	render(){
 		return(
-			<div className={'background'}>
-			<VerticalTimeline>
-			{
-				this.returnTimeLineEle()
-			}
-			</VerticalTimeline>
-			</div>
-
+	<div className={'background'}>
+		<VerticalTimeline>
+			{this.returnTimeLineEle()}
+		</VerticalTimeline>
+	</div>
 		);
 	}
 }
