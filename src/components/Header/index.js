@@ -1,8 +1,8 @@
 import React, { Component } from'react';
-import '../styles/Header.css';
-import MainLogo from '../images/RoboLogo.png';
-import * as paths from '../constants/paths.js'
 import {Link } from 'react-router-dom';
+import MainLogo from '../../images/RoboLogo.png';
+import * as paths from '../../constants/paths.js'
+import './styles.css';
 
 export default class Header extends Component{
 	render(){
@@ -41,6 +41,7 @@ export default class Header extends Component{
 
 							<li class="blue"><Link to={paths.MEMBERS}>Members</Link></li>
 							<li class="purple"><Link to={paths.CONTACT}>Contact</Link></li>
+							<li class="purple"><Link to={paths.CONTACT}>Log in</Link></li>
 					 </ul>
 				</div>
 			</div>

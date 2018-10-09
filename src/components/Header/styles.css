@@ -1,6 +1,7 @@
 /* Default Template Styles */
 
 /* Typography */
+
 body {
   background: #fff;
 }
@@ -274,6 +275,9 @@ ul.chevron .submenu > a::after, ul.chevron .sub-submenu > a::after, ul.chevron .
   -ms-transition: all 0.20s linear 0s;
   -moz-transition: all 0.20s linear 0s;
   -webkit-transition: all 0.20s linear 0s;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .fixed {
   left: 0;
@@ -1608,14 +1612,14 @@ nav.fixed .left-menu, nav.fixed .right-menu {
   width: 100px;
 }
 .left-menu, .right-menu {
-  padding-top: 10px;
+  padding-top: 5px;
   width: calc(50% - 50px);
 }
 .logo img {
   margin: 0 auto;
-  width: 100px;
+  width: 85px;
   position: relative;
-  top: 2px;
+  top: 1px;
 }
 .top-nav li a {
   color: #fff;
@@ -1679,6 +1683,9 @@ nav.fixed .left-menu, nav.fixed .right-menu {
   -moz-transition:all 0.20s linear 0s;
   -webkit-transition:all 0.20s linear 0s;
 }
+.yellow a:hover {
+  color: #f18f01;
+}
 .purple a::before {
   width: 8px;
   height: 8px;
@@ -1699,6 +1706,9 @@ nav.fixed .left-menu, nav.fixed .right-menu {
   -webkit-transition:all 0.20s linear 0s;
 }
 
+.purple a:hover {
+  color: #b8336a;
+}
 .red a::before {
   width: 8px;
   height: 8px;
@@ -1718,8 +1728,8 @@ nav.fixed .left-menu, nav.fixed .right-menu {
   -moz-transition:all 0.20s linear 0s;
   -webkit-transition:all 0.20s linear 0s;
 }
-.red p::before{
-  color:#ff1744
+.red a:hover{
+  color:#ff1744;
 }
 .blue a::before {
   width: 8px;
@@ -1740,6 +1750,9 @@ nav.fixed .left-menu, nav.fixed .right-menu {
   -moz-transition:all 0.20s linear 0s;
   -webkit-transition:all 0.20s linear 0s;
 }
+.blue a:hover {
+  color: #0077b5;
+}
 .green a::before {
   width: 8px;
   height: 8px;
@@ -1759,7 +1772,9 @@ nav.fixed .left-menu, nav.fixed .right-menu {
   -moz-transition:all 0.20s linear 0s;
   -webkit-transition:all 0.20s linear 0s;
 }
-
+.green a:hover {
+  color:#93d63b;
+}
 .top-nav > ul > li > a:hover::before, .top-nav > ul > li.active-item > a::before {
 	bottom: 10px;
 	opacity: 1;
