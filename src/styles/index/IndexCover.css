@@ -83,10 +83,10 @@
 .disappearing-logo img.disappearing-img.img-invisible {
   height: 100%;
   -webkit-animation-name: disappearing-img-animation;  /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 0.8s;  /* Safari 4.0 - 8.0 */    
+  -webkit-animation-duration: 0.5s;  /* Safari 4.0 - 8.0 */    
   -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
   animation-name: disappearing-img-animation;
-  animation-duration: 0.8s;    
+  animation-duration: 0.5s;    
   animation-fill-mode: forwards;
 }
 
