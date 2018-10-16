@@ -23,7 +23,7 @@ class App extends Component {
     return (
       <HashRouter>
         <div>
-<Header/>
+          <Header/>
           <Route
             exact path={ paths.HISTORY }
             component={ () => <Timeline />}
