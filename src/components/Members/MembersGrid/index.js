@@ -1,8 +1,8 @@
 import React from 'react';
-import placeholder from './MembersGridCell/placeholder.png';
-import MembersGridCell from './MembersGridCell/membersGridCell';
-import MemberInformationModal from './MemberInformationModal/memberInformationModal';
-import './membersGrid.css';
+import placeholder from 'images/placeholder.png';
+import MembersGridCell from './MembersGridCell/index';
+import MemberInformationModal from './MemberInformationModal/index';
+import './styles.css';
 
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';

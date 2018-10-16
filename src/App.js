@@ -4,7 +4,7 @@ import * as paths from './constants/paths.js';
 import membersData from './data/members.json';
 import Timeline from './components/Timeline';
 import Header from './components/Header';
-import Members from './components/Members/members';
+import Members from './components/Members/index';
 import './App.css';
 
 /*

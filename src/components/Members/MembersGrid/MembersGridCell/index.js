@@ -1,5 +1,5 @@
 import React from 'react';
-import placeholder from './placeholder.png'
+import placeholder from 'images/placeholder.png'
 
 import { withStyles } from '@material-ui/core/styles';
 import GridListTile from '@material-ui/core/GridListTile';

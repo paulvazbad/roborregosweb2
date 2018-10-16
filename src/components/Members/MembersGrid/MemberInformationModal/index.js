@@ -1,6 +1,6 @@
 import React from 'react';
-import placeholder from '../MembersGridCell/placeholder.png';
-import './memberInformationModal.css';
+import placeholder from 'images/placeholder.png';
+import './styles.css';
 
 import { whitStyles } from '@material-ui/core/styles';
 import IconButton from '@material-ui/core/IconButton';

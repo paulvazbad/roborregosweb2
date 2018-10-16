@@ -1,6 +1,6 @@
 import React from 'react';
-import MembersGrid from './MembersGrid/membersGrid';
-import './members.css';
+import MembersGrid from './MembersGrid/index';
+import './styles.css';
 
 class Members extends React.Component {
 	constructor(props) {
