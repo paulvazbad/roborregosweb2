@@ -1570,7 +1570,7 @@ header.position-absolute {
 }
 nav {
   border-bottom: 0;
-  padding: 15px 0;
+  padding: 5px 0;
   position: relative;
   z-index: 2;
 }
@@ -1612,14 +1612,14 @@ nav.fixed .left-menu, nav.fixed .right-menu {
   width: 100px;
 }
 .left-menu, .right-menu {
-  padding-top: 5px;
   width: calc(50% - 50px);
 }
 .logo img {
   margin: 0 auto;
-  width: 85px;
+  width: 80px;
   position: relative;
   top: 1px;
+  padding: 2px;
 }
 .top-nav li a {
   color: #fff;
