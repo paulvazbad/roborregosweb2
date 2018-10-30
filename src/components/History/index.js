@@ -1,6 +1,7 @@
 import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import { AccessAlarm, Polymer, Build, Code } from '@material-ui/icons';
+import Button from '@material-ui/core/Button';
 import 'react-vertical-timeline-component/style.min.css';
 import './styles.css';
 
@@ -11,7 +12,8 @@ export default class Timeline extends React.Component{
 			description: 'Desarrollo del prototipo de robot de servicio en la categoria @Home.',
 			image: 'https://via.placeholder.com/450x300',
 			members: ['Diego Garza', 'Emilio Chavez', 'Sebastian Rivera'],
-			date: '2018-present'
+			date: '2018-present',
+			id:0
 		},
 		{
 			title: 'LARC 2018',
@@ -19,22 +21,36 @@ export default class Timeline extends React.Component{
 			image: 'https://via.placeholder.com/450x300',
 			members: ['Osvaldo Alvarez', 'Alexis Virgen', 'Ivan Sol', 'Antonio Rodriguez', 'Mariano Uvalle'],
 			date: 'November 2018',
+			id:1
 		},
 		{
 			title: 'RobocupJr 2018',
 			description: 'Participacion en Robocup Jr en Montreal Canada con equipos de Soccer Open y Maze.',
 			image: 'https://via.placeholder.com/450x300',
 			members: ['Alberto Jahuey', 'Greg Espinoza', 'Yulisa Gutierrez', 'Alberto Lopez', 'Mariano Uvalle'],
-			date: 'November 2018'
+			date: 'November 2018',
+			id:2
 		},
 		{
 			title: 'TMR 2018',
 			description: 'Participacion en el Torneo Mexicano de Robotica en Monterrey, NL con equipos de Soccer Open, Soccer Light, Maze y Drones Autonomos',
 			image: 'https://via.placeholder.com/450x300',
 			members: ['Alberto Jahuey', 'Greg Espinoza', 'Yulisa Gutierrez', 'Alberto Lopez', 'Mariano Uvalle'],
-			date: 'November 2018'
-		}
-	]}
+			date: 'November 2018',
+			id:3
+		},
+		{
+			title: 'LARC 2017',
+			description: 'Tercer lugar obtenido en la Latin American Robotics Competition 2017 en Brazil.',
+			image: 'https://via.placeholder.com/450x300',
+			members: ['Alejandro Garza', 'Clara Gutierrez', 'Nestor Maldonado', 'Javier Escamilla', 'Diego Cardozo'],
+			date: 'November 2018',
+			id:4
+		},
+		
+	],
+	eventoSeleccionado:0
+	}
 getRandomColor = () =>{
 	let color;
 	color = Math.random();
@@ -55,20 +71,25 @@ getRandomIcon = () =>  {
 		return (<Polymer />);
 	}
 }
+
 	 returnTimeLineEle = () => {
 		return this.state.eventos.map( evento =>
-			 <VerticalTimelineElement
-				 className="vertical-timeline-element--work"
-				 iconStyle={{ background: "#" + this.getRandomColor(), color: '#fff' }}
-				 icon={this.getRandomIcon()}
-			 >
-				 <h3 className="vertical-timeline-element-title"><b>{evento.title}</b></h3>
-				 <h4 className="vertical-timeline-element-subtitle">{evento.date}</h4>
-				 <img src={evento.image} height={600} resizemode="stretch"/>
-				 <p>
-					{evento.description}
-				 </p>
-			 </VerticalTimelineElement>);
+				<VerticalTimelineElement
+					className="vertical-timeline-element--work"
+					iconStyle={{ background: "#" + this.getRandomColor(), color: '#fff' }}
+					icon={this.getRandomIcon()}
+				>
+					<h3 className="vertical-timeline-element-title"><b>{evento.title}</b></h3>
+					<h4 className="vertical-timeline-element-subtitle">{evento.date}</h4>
+					<img src={evento.image} height={600} resizemode="stretch" />
+					<p>
+						{evento.description}
+					</p>
+					<Button variant="contained" color="primary">
+     				 Ver más
+    				</Button>
+				</VerticalTimelineElement>
+			 );
 
 		}
 

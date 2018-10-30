@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import { HashRouter, Route } from 'react-router-dom';
 import './App.css';
 import Timeline  from './components/History/index.js';
