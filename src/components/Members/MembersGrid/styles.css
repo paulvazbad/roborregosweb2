@@ -1,0 +1,33 @@
+.members-grid .member-cell img {
+	transition: 0.4s;
+	transform: translate(0);
+	top: 0;
+	left: 0;
+}
+
+.members-grid .member-cell:hover img {
+	transform: scale(1.2);
+}
+
+.members-grid .member-cell:hover {
+	cursor: pointer;
+}
+
+.example-enter {
+  opacity: 0;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: opacity 0.2s ease-in-out;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
