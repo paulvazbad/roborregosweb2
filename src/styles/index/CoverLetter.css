@@ -1,0 +1,10 @@
+.cover-letters {
+    background-size: 80px auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.cover-letters > .container {
+    display: inline-block;
+    height: 100%; 
+}
