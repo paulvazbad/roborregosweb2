@@ -41,7 +41,7 @@ export default class Header extends Component{
 
 							<li class="blue"><Link to={paths.MEMBERS}>Members</Link></li>
 							<li class="purple"><Link to={paths.CONTACT}>Contact</Link></li>
-							<li class="purple"><Link to={paths.CONTACT}>Log in</Link></li>
+							<li class="orange"><Link to={paths.CONTACT}>Log in</Link></li>
 					 </ul>
 				</div>
 			</div>

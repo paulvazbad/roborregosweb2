@@ -1559,7 +1559,6 @@ header.position-absolute {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 100%;
   z-index: 10;
 }
 .top-bar {
@@ -1730,6 +1729,28 @@ nav.fixed .left-menu, nav.fixed .right-menu {
 }
 .red a:hover{
   color:#ff1744;
+}
+.orange a::before {
+  width: 8px;
+  height: 8px;
+  display: block;
+  background: #E65100;
+  content: "";
+  border-radius: 10px;
+  position: absolute;
+  margin: 0 auto;
+  left: 50%;
+  margin-left: -4px;
+  bottom: 15px;
+  opacity: 0;
+	transition:all 0.20s linear 0s;
+  -o-transition:all 0.20s linear 0s;
+  -ms-transition:all 0.20s linear 0s;
+  -moz-transition:all 0.20s linear 0s;
+  -webkit-transition:all 0.20s linear 0s;
+}
+.orange a:hover{
+  color:#E65100;
 }
 .blue a::before {
   width: 8px;
