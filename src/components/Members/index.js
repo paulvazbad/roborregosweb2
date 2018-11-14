@@ -1,5 +1,6 @@
 import React from 'react';
 import MembersGrid from './MembersGrid/index';
+import MembersHeader from './MembersHeader/index';
 import './styles.css';
 
 class Members extends React.Component {
@@ -11,7 +12,10 @@ class Members extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<div id="members-section">
+				<header>
+					<MembersHeader />
+				</header>
 				<MembersGrid membersData={this.membersData} className={'members-grid-section'} />
 			</div>
 		);

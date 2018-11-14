@@ -1,0 +1,10 @@
+#members-header {
+	background: linear-gradient(
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.5)
+		),
+		url(./images/background_pattern.png);
+	background-repeat: repeat;
+	text-align: center;
+	height: 100%;
+}

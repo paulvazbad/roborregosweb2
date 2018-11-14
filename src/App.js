@@ -18,7 +18,7 @@ class App extends Component {
   render() {
     return (
       <HashRouter>
-        <div>
+        <div id="page-container">
           <Header />
 
           <Route

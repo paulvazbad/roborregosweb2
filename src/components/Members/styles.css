@@ -1,3 +1,13 @@
+header {
+	height: 100%;
+}
+
+#members-section {
+	padding-top: 120px;
+	height: 100%;
+
+}
+
 .members-grid-section {
 	height: 100%;
 }
