@@ -13,14 +13,12 @@ import external_deppendencies
 import internal_js
 import internal_styles
 */
-
 class App extends Component {
   render() {
     return (
       <HashRouter>
         <div id="page-container">
           <Header />
-
           <Route
             exact path={ paths.HISTORY }
             component={ () => <Timeline />}
@@ -30,7 +28,6 @@ class App extends Component {
             path={ paths.MEMBERS }
             component={ () => <Members membersData={ membersData } /> }
           />
-
         </div>
       </HashRouter>
     );

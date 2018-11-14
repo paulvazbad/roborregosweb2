@@ -1,8 +1,8 @@
 import React, { Component } from'react';
-import './styles.css';
+import { Link } from 'react-router-dom';
 import MainLogo from 'images/RoboLogo.png';
 import * as paths from 'constants/paths.js'
-import { Link } from 'react-router-dom';
+import './styles.css';
 
 export default class Header extends Component{
 	render(){
@@ -12,17 +12,17 @@ export default class Header extends Component{
 			<div class="top-nav">
 
 				<div class="logo hide-l hide-xl hide-xxl">
-					<img class="logo-dark" src={MainLogo} alt=""/>
+						<img class="logo-dark" src={MainLogo} alt=""/>
 				</div>
 				<p class="nav-text"></p>
 
 
 				<div class="top-nav left-menu">
-					<ul class="right top-ul chevron">
-						<li class="red"><Link to={paths.HOME}>Home</Link></li>
-						<li class= "green"><Link to={paths.ABOUTUS}>About Us</Link></li>
-						<li class="yellow"><Link to={paths.HISTORY}>History</Link></li>
-					</ul>
+					 <ul class="right top-ul chevron">
+							<li class="red"><Link to={paths.HOME}>Home</Link></li>
+							<li class= "green"><Link to={paths.ABOUTUS}>About Us</Link></li>
+							<li class="yellow"><Link to={paths.HISTORY}>History</Link></li>
+					 </ul>
 				</div>
 
 
@@ -37,11 +37,11 @@ export default class Header extends Component{
 
 
 				<div class="top-nav right-menu  background-red-dott">
-					<ul class="top-ul chevron " >
-
-						<li class="blue"><Link to={paths.MEMBERS}>Members</Link></li>
-						<li class="purple"><Link to={paths.CONTACT}>Contact</Link></li>
-					</ul>
+					 <ul class="top-ul chevron " >
+							<li class="blue"><Link to={paths.MEMBERS}>Members</Link></li>
+							<li class="purple"><Link to={paths.CONTACT}>Contact</Link></li>
+							<li class="orange"><Link to={paths.CONTACT}>Log in</Link></li>
+					 </ul>
 				</div>
 			</div>
 		</nav>

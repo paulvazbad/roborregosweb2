@@ -274,6 +274,10 @@ ul.chevron .submenu > a::after, ul.chevron .sub-submenu > a::after, ul.chevron .
   -ms-transition: all 0.20s linear 0s;
   -moz-transition: all 0.20s linear 0s;
   -webkit-transition: all 0.20s linear 0s;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
 }
 .fixed {
   left: 0;
@@ -1555,7 +1559,6 @@ header.position-absolute {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 100%;
   z-index: 10;
 }
 .top-bar {
@@ -1566,7 +1569,7 @@ header.position-absolute {
 }
 nav {
   border-bottom: 0;
-  padding: 15px 0;
+  padding: 5px 0;
   position: relative;
   z-index: 2;
 }
@@ -1608,14 +1611,14 @@ nav.fixed .left-menu, nav.fixed .right-menu {
   width: 100px;
 }
 .left-menu, .right-menu {
-  padding-top: 10px;
   width: calc(50% - 50px);
 }
 .logo img {
   margin: 0 auto;
-  width: 100px;
+  width: 80px;
   position: relative;
-  top: 2px;
+  top: 1px;
+  padding: 2px;
 }
 .top-nav li a {
   color: #fff;
@@ -1679,6 +1682,11 @@ nav.fixed .left-menu, nav.fixed .right-menu {
   -moz-transition:all 0.20s linear 0s;
   -webkit-transition:all 0.20s linear 0s;
 }
+
+.yellow a:hover {
+  color: #f18f01;
+}
+
 .purple a::before {
   width: 8px;
   height: 8px;
@@ -1697,6 +1705,11 @@ nav.fixed .left-menu, nav.fixed .right-menu {
   -ms-transition:all 0.20s linear 0s;
   -moz-transition:all 0.20s linear 0s;
   -webkit-transition:all 0.20s linear 0s;
+}
+
+
+.purple a:hover {
+  color: #b8336a;
 }
 
 .red a::before {
@@ -1718,8 +1731,32 @@ nav.fixed .left-menu, nav.fixed .right-menu {
   -moz-transition:all 0.20s linear 0s;
   -webkit-transition:all 0.20s linear 0s;
 }
-.red p::before{
-  color:#ff1744
+
+.red a:hover{
+  color:#ff1744;
+}
+.orange a::before {
+  width: 8px;
+  height: 8px;
+  display: block;
+  background: #E65100;
+  content: "";
+  border-radius: 10px;
+  position: absolute;
+  margin: 0 auto;
+  left: 50%;
+  margin-left: -4px;
+  bottom: 15px;
+  opacity: 0;
+	transition:all 0.20s linear 0s;
+  -o-transition:all 0.20s linear 0s;
+  -ms-transition:all 0.20s linear 0s;
+  -moz-transition:all 0.20s linear 0s;
+  -webkit-transition:all 0.20s linear 0s;
+}
+.orange a:hover{
+  color:#E65100;
+
 }
 .blue a::before {
   width: 8px;
@@ -1740,6 +1777,11 @@ nav.fixed .left-menu, nav.fixed .right-menu {
   -moz-transition:all 0.20s linear 0s;
   -webkit-transition:all 0.20s linear 0s;
 }
+
+.blue a:hover {
+  color: #0077b5;
+}
+
 .green a::before {
   width: 8px;
   height: 8px;
@@ -1758,6 +1800,10 @@ nav.fixed .left-menu, nav.fixed .right-menu {
   -ms-transition:all 0.20s linear 0s;
   -moz-transition:all 0.20s linear 0s;
   -webkit-transition:all 0.20s linear 0s;
+}
+
+.green a:hover {
+  color:#93d63b;
 }
 
 .top-nav > ul > li > a:hover::before, .top-nav > ul > li.active-item > a::before {
