@@ -1,6 +1,7 @@
 import React from 'react';
 import MembersGrid from './MembersGrid/index';
 import MembersHeader from './MembersHeader/index';
+import MembersJoinUs from './MembersJoinUs/index';
 import './styles.css';
 
 class Members extends React.Component {
@@ -16,6 +17,8 @@ class Members extends React.Component {
 				<MembersHeader />
 
 				<MembersGrid membersData={this.membersData} className={'members-grid-section'} />
+
+				<MembersJoinUs />
 			</div>
 		);
 	}
