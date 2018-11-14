@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { HashRouter, Route } from 'react-router-dom';
 import * as paths from 'constants/paths.js';
-import Timeline  from 'components/Timeline/index';
+import History  from 'components/History/index';
 import Header from 'components/Header/index';
 import membersData from 'data/members.json';
 import Members from 'components/Members/index';
@@ -21,7 +21,7 @@ class App extends Component {
           <Header />
           <Route
             exact path={ paths.HISTORY }
-            component={ () => <Timeline />}
+            component={ () => <History />}
           />
 
           <Route
