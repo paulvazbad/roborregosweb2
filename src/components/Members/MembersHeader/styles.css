@@ -1,10 +1,24 @@
 #members-header {
-	background: linear-gradient(
-		rgba(0, 0, 0, 0.5),
-		rgba(0, 0, 0, 0.5)
+	height: 100%;
+	position: relative;
+	background-repeat: repeat;
+	background:
+		linear-gradient(
+			rgba(0, 0, 0, 0.3),
+			rgba(0, 0, 0, 0.3)
 		),
 		url(./images/background_pattern.png);
-	background-repeat: repeat;
-	text-align: center;
-	height: 100%;
+}
+
+#header-legend {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(255,165,0, 0.5);
+	padding: 15px;
+}
+
+#header-legend h2 {
+	color: #fff !important;
 }

@@ -13,9 +13,8 @@ class Members extends React.Component {
 	render() {
 		return (
 			<div id="members-section">
-				<header>
-					<MembersHeader />
-				</header>
+				<MembersHeader />
+
 				<MembersGrid membersData={this.membersData} className={'members-grid-section'} />
 			</div>
 		);
