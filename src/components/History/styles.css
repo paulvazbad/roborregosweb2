@@ -1,9 +1,15 @@
 .background{
-  background-color:#4B4B4C;
-  min-height: 100%;
+  background:
+		linear-gradient(
+			90deg,
+			rgba(17, 157, 164, 0.9) 40%,
+			rgba(0, 111, 123, 0.9) 100%
+		),
+		url(./images/github_pattern.svg) top left/auto repeat;
+  /*min-height: 100%; */
   display: flex;
   flex-grow:1;
-  padding-top:2em;
+  padding-top: 2em;
 }
 .image{
   flex-grow: 1;
