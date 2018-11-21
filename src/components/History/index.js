@@ -10,7 +10,7 @@ export default class Timeline extends React.Component{
 	state = { eventos:[
 		{
 			title: '@Home 2018',
-			description: 'Prototype of the @Home robot launched at Conecta TEC.',
+			description: 'Prototype of the @Home robot launched at Conexión TEC.',
 			image: home,
 			members: ['Diego Garza', 'Emilio Chavez', 'Sebastian Rivera'],
 			date: 'November 2018',
